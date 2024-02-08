@@ -1,0 +1,22 @@
+{
+   "short_name": "Juegos",
+   "name": "Juegos de Colgate Palmolive",
+   "main": "/index.html",
+   "icons": [
+      {
+         "src": "./img/logo192.png",
+         "type": "image/png",
+         "sizes": "192x192"
+      },
+      {
+         "src": "./img/logo512.png",
+         "type": "image/png",
+         "sizes": "512x512"
+      }
+   ],
+   "start_url": "./",
+   "background_color": "#ffffff",
+   "orientation": "landscape",
+   "display": "fullscreen",
+   "theme_color": "#3367D6"
+}

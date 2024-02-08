@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   color: #fff;
+   overflow: hidden
+}
+
+.imagenes{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.imagenes img {
+   width: 100%;
+   height: 100%;
+}
+
+.text {
+   /* height: 100%; fece00--------9e7800 */
+   position: absolute;
+   bottom: 2em;
+   right: 10vw;
+}
+
+.text button {
+   /* margin-top: 1em; */
+   padding: 0.2em 0.5em;
+   font-size: 1.5em;
+   border: 0px;
+   border-radius: 16px;
+   background: #fece00;
+   box-shadow: 0px 5px #9e7800;
+   color: #fff;
+   font-weight: 800;
+   /* transition: 0.1s; */
+}
+
+.text button:active {
+   position: relative;
+   top: 10px;
+   box-shadow: 0px 0px #003ca5;
+}
+
+/* ////////////////////////////////////////// */
+
+
+/* 
+   SUAVITEL
+#071b3e - Azul oscuro
+#0d9bde - Azul Claro}
+
+   FABULOSO
+#780dd3 color solido 
+
+   AXION
+#026700 - Verde oscuro 
+#a1f800 - Verde claro */

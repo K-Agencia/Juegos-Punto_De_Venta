@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="styleFinal.css">
+   <title>FINAL</title>
+</head>
+
+<body>
+
+   <div class="divGlobal">
+      <div class="Puntuacion">
+         <div class="barra Suavitel">
+            <img src="./img/Logo_Suavitel.png" alt="">
+            <p>Tu puntuación</p>
+            <h3 id="puntaje_Suavitel" class="puntaje_Suavitel">0</h3>
+         </div>
+         <div class="barra Fabuloso">
+            <img src="./img/Logo_Fabuloso.png" alt="">
+            <p>Tu puntuación</p>
+            <h3 id="puntaje_Fabuloso" class="puntaje_Fabuloso">0</h3>
+         </div>
+         <div class="barra Axion">
+            <img src="./img/Logo_Axion.png" alt="">
+            <p>Tu puntuación</p>
+            <h3 id="puntaje_Axion" class="puntaje_Axion">0</h3>
+         </div>
+      </div>
+      <div class="PuntuacionTotal">
+         <div class="barra Total">
+            <h2>¡Felicitaciones!</h2>
+            <p>Tu puntuación total</p>
+            <h3 id="pts" class="puntaje_Axion">0</h3>
+         </div>
+         <a href="./index.html">
+            <button>
+               <img src="./img/home.svg" alt="">
+            </button>
+         </a>
+      </div>
+   </div>
+
+   <script>
+
+      let puntos = document.getElementById("pts");
+      let pts_Suavitel = document.getElementById("puntaje_Suavitel");
+      let pts_Fabuloso = document.getElementById("puntaje_Fabuloso");
+      let pts_Axion = document.getElementById("puntaje_Axion");
+      let lasCookies = document.cookie;
+
+      let ca = document.cookie.split(';');
+
+      let Puntaje = 0;
+
+      for (let i = 0; i < ca.length; i++) {
+
+         let cai = ca[i].split('=');
+
+         if (cai[0].trim() === "Suavitel") {
+            Puntaje += parseInt(cai[1]);
+            pts_Suavitel.innerText = parseInt(cai[1]);
+
+         } else if (cai[0].trim() === "Fabuloso") {
+            Puntaje += parseInt(cai[1]);
+            pts_Fabuloso.innerText = parseInt(cai[1]);
+
+         } else if (cai[0].trim() === "Axion") {
+            Puntaje += parseInt(cai[1]);
+            pts_Axion.innerText = parseInt(cai[1]);
+
+         }
+      }
+      puntos.innerText = Puntaje;
+
+   </script>
+</body>
+
+</html>

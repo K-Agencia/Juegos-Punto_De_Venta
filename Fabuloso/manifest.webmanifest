@@ -1,0 +1,14 @@
+{
+"name": "Juego 2 - Fabuloso", 
+"scope": "/", 
+"start_url": "index.html", 
+"theme_color": "#000000", 
+"background_color": "#000000", 
+"short_name": "Fabuloso", 
+"description": "Juego # 2 - Eliminando bacterias con Fabuloso Antibacterial", 
+"author": "K Agencias SASA", 
+"lang": "en", 
+"version": "1.0", 
+"display": "standalone", 
+"orientation": "landscape"
+}

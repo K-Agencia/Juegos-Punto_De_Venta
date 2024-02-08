@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>Juego 2 - Fabuloso</title>
+<meta charset="utf-8">
+<meta name="Description" content="Juego # 2 - Eliminando bacterias con Fabuloso Antibacterial"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta name="theme-color" content="#000000"/>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Juego 2 - Fabuloso" />
+<meta name="generator" content="VisualNEO Web (22.3.19)" />
+<meta name="date" content="2022-05-13 10:40" />
+<meta name="version" content="1.0" />
+<meta name="copyright" content="Copyright 2022 K Agencias SASA" />
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/nzAnimate.min.css">
+<link rel="stylesheet" href="css/neoapp-ui.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="neobody" id="ng-app" ng-app="NeoApp" ng-cloak>
+<div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
+<script type="text/ng-template" id="start">
+<div class="neopage" id="start">
+<img id="Image100" alt="" ng-src="img/fondo2.png" class="[NAB.Image100_effect]" ng-style="NAB.Image100_style" ng-hide="NAB.Image100_hidden" ng-disabled="NAB.Image100_disabled">
+<img id="Image80" alt="" ng-src="img/virus-killer.png" class="[NAB.Image80_effect]" ng-style="NAB.Image80_style" ng-hide="NAB.Image80_hidden" ng-disabled="NAB.Image80_disabled">
+<img id="Image140" alt="" ng-src="img/microbio6.png" class="[NAB.Image140_effect]" ng-style="NAB.Image140_style" ng-hide="NAB.Image140_hidden" ng-disabled="NAB.Image140_disabled" ng-click="Image140_click()">
+<img id="Image150" alt="" ng-src="img/start.png" class="[NAB.Image150_effect]" ng-style="NAB.Image150_style" ng-hide="NAB.Image150_hidden" ng-disabled="NAB.Image150_disabled" ng-click="Image150_click()">
+<div id="Paragraph2" class="[NAB.Paragraph2_effect]" ng-style="NAB.Paragraph2_style" ng-hide="NAB.Paragraph2_hidden" ng-disabled="NAB.Paragraph2_disabled">Desliza tu dedo sobre la pantalla persiguiendo los gérmenes</div>
+<h1 id="Headline1" class="[NAB.Headline1_effect]" ng-style="NAB.Headline1_style" ng-hide="NAB.Headline1_hidden" ng-disabled="NAB.Headline1_disabled">¿Cómo jugar?</h1>
+<img id="Image90" alt="" ng-src="img/Botella_Fabuloso.png" class="[NAB.Image90_effect]" ng-style="NAB.Image90_style" ng-hide="NAB.Image90_hidden" ng-disabled="NAB.Image90_disabled">
+<div id="Paragraph4" class="[NAB.Paragraph4_effect]" ng-style="NAB.Paragraph4_style" ng-hide="NAB.Paragraph4_hidden" ng-disabled="NAB.Paragraph4_disabled">Elimina la mayor cantidad de gérmenes</div>
+<div id="Paragraph5" class="[NAB.Paragraph5_effect]" ng-style="NAB.Paragraph5_style" ng-hide="NAB.Paragraph5_hidden" ng-disabled="NAB.Paragraph5_disabled">Tócalos, haz que desaparezcan.</div>
+<div id="Paragraph6" class="[NAB.Paragraph6_effect]" ng-style="NAB.Paragraph6_style" ng-hide="NAB.Paragraph6_hidden" ng-disabled="NAB.Paragraph6_disabled">Hazlo en un tiempo menor a 15 segundos</div>
+<img id="Image9" alt="" ng-src="img/microbio4.png" class="[NAB.Image9_effect]" ng-style="NAB.Image9_style" ng-hide="NAB.Image9_hidden" ng-disabled="NAB.Image9_disabled">
+<img id="Image10" alt="" ng-src="img/microbio4.png" class="[NAB.Image10_effect]" ng-style="NAB.Image10_style" ng-hide="NAB.Image10_hidden" ng-disabled="NAB.Image10_disabled">
+<img id="Image11" alt="" ng-src="img/microbio4.png" class="[NAB.Image11_effect]" ng-style="NAB.Image11_style" ng-hide="NAB.Image11_hidden" ng-disabled="NAB.Image11_disabled">
+<img id="Image12" alt="" ng-src="img/microbio4.png" class="[NAB.Image12_effect]" ng-style="NAB.Image12_style" ng-hide="NAB.Image12_hidden" ng-disabled="NAB.Image12_disabled">
+</div>
+</script>
+<script type="text/ng-template" id="game">
+<div class="neopage" id="game">
+<div id="Container1" class="[NAB.Container1_effect]" ng-style="NAB.Container1_style" ng-hide="NAB.Container1_hidden" ng-disabled="NAB.Container1_disabled">
+<img id="Image7" alt="" ng-src="img/fondo.jpg" class="[NAB.Image7_effect]" ng-style="NAB.Image7_style" ng-hide="NAB.Image7_hidden" ng-disabled="NAB.Image7_disabled">
+<img id="Image1" alt="" ng-src="img/microbio1.png" class="[NAB.Image1_effect]" ng-style="NAB.Image1_style" ng-hide="NAB.Image1_hidden" ng-disabled="NAB.Image1_disabled">
+<img id="Image2" alt="" ng-src="img/microbio2.png" class="[NAB.Image2_effect]" ng-style="NAB.Image2_style" ng-hide="NAB.Image2_hidden" ng-disabled="NAB.Image2_disabled">
+<img id="Image3" alt="" ng-src="img/microbio3.png" class="[NAB.Image3_effect]" ng-style="NAB.Image3_style" ng-hide="NAB.Image3_hidden" ng-disabled="NAB.Image3_disabled">
+<img id="Image4" alt="" ng-src="img/microbio4.png" class="[NAB.Image4_effect]" ng-style="NAB.Image4_style" ng-hide="NAB.Image4_hidden" ng-disabled="NAB.Image4_disabled">
+<img id="Image5" alt="" ng-src="img/microbio5.png" class="[NAB.Image5_effect]" ng-style="NAB.Image5_style" ng-hide="NAB.Image5_hidden" ng-disabled="NAB.Image5_disabled">
+<img id="Image6" alt="" ng-src="img/microbio6.png" class="[NAB.Image6_effect]" ng-style="NAB.Image6_style" ng-hide="NAB.Image6_hidden" ng-disabled="NAB.Image6_disabled">
+</div>
+<timer id="Timer1" interval="1000"></timer>
+<div id="Paragraph1" class="[NAB.Paragraph1_effect]" ng-style="NAB.Paragraph1_style" ng-hide="NAB.Paragraph1_hidden" ng-disabled="NAB.Paragraph1_disabled">[points]</div>
+<div id="Paragraph3" class="[NAB.Paragraph3_effect]" ng-style="NAB.Paragraph3_style" ng-hide="NAB.Paragraph3_hidden" ng-disabled="NAB.Paragraph3_disabled">Tiempo: [seconds]</div>
+<timer id="Timer3" interval="1000"></timer>
+<timer id="Timer2" interval="1000"></timer>
+<div id="Container3" class="[NAB.Container3_effect]" ng-style="NAB.Container3_style" ng-hide="NAB.Container3_hidden" ng-disabled="NAB.Container3_disabled">
+<img id="Image170" alt="" ng-src="img/Botella_Fabuloso.png" class="[NAB.Image170_effect]" ng-style="NAB.Image170_style" ng-hide="NAB.Image170_hidden" ng-disabled="NAB.Image170_disabled">
+<img id="Image180" alt="" ng-src="img/Logo_Fabuloso.png" class="[NAB.Image180_effect]" ng-style="NAB.Image180_style" ng-hide="NAB.Image180_hidden" ng-disabled="NAB.Image180_disabled">
+<h4 id="Headline4" class="[NAB.Headline4_effect]" ng-style="NAB.Headline4_style" ng-hide="NAB.Headline4_hidden" ng-disabled="NAB.Headline4_disabled">Toca la pantalla para eliminar las bacterias que aparecen en nuestro hogar. <br>Fabuloso Frescura Activa elimina el 99.9% de bacterias*</h4>
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="gameover">
+<div class="neopage" id="gameover">
+<img id="Image110" alt="" ng-src="img/fondo2.png" class="[NAB.Image110_effect]" ng-style="NAB.Image110_style" ng-hide="NAB.Image110_hidden" ng-disabled="NAB.Image110_disabled">
+<img id="Image160" alt="" ng-src="img/game-over.png" class="[NAB.Image160_effect]" ng-style="NAB.Image160_style" ng-hide="NAB.Image160_hidden" ng-disabled="NAB.Image160_disabled">
+<h1 id="Headline2" class="[NAB.Headline2_effect]" ng-style="NAB.Headline2_style" ng-hide="NAB.Headline2_hidden" ng-disabled="NAB.Headline2_disabled">TUS PUNTOS</h1>
+<h1 id="Headline3" class="[NAB.Headline3_effect]" ng-style="NAB.Headline3_style" ng-hide="NAB.Headline3_hidden" ng-disabled="NAB.Headline3_disabled">[points]</h1>
+<img id="Image8" alt="" ng-src="img/Siguiente.png" class="[NAB.Image8_effect]" ng-style="NAB.Image8_style" ng-hide="NAB.Image8_hidden" ng-disabled="NAB.Image8_disabled" ng-click="Image8_click()">
+<img id="Image13" alt="" ng-src="img/Logo_Fabuloso.png" class="[NAB.Image13_effect]" ng-style="NAB.Image13_style" ng-hide="NAB.Image13_hidden" ng-disabled="NAB.Image13_disabled">
+</div>
+</script>
+<script type="text/ng-template" id="NewDialog">
+<div id="DialogContainer1" class="modal-dialog modal-sm"><div class="modal-content" style="height:100%">
+</div></div>
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/neoapp.min.js"></script>
+<script src="js/neoapp-ui.min.js"></script>
+<!--<script src="pwabuilder1-sw.root.js"></script>-->
+<!--<script src="js/pwaupdate1.js"></script>-->
+<!--<script src="js/workbox-sw.js"></script>-->
+<script src="js/gsap.min.js"></script>
+<script src="js/simpleTones.js"></script>
+<script src="js/main.js"></script>
+<script type="module">
+import "./js/pwaupdate1.js";
+const el = document.createElement("pwa-update");
+document.body.appendChild(el);
+</script>
+<noscript>Sorry, JavaScript is required!</noscript>
+</body>
+</html>
